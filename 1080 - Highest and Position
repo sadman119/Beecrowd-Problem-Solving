@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int highest = 0;
+    int input,position;
+
+    for (int i = 1; i <= 100; i++) {
+        scanf("%d", &input);
+
+        if (i==1 || input > highest) {
+            highest = input;
+            position= i;
+        }
+    }
+    printf("%d\n", highest);
+    printf("%d\n",position);
+    return 0;
+}
