@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y, i;
+    scanf("%d %d", &X, &Y);
+    
+    int total = 0;
+
+    if (X > Y) {
+        i = Y;
+        do {
+            if (i % 13 != 0) {
+                total += i;
+            }
+            i++;
+        } while (i <= X);
+    } 
+    
+    else if (X < Y) {
+        i = X;
+        do {
+            if (i % 13 != 0) {
+                total += i;
+            }
+            i++;
+        } while (i <= Y);
+    }
+
+    printf("%d\n", total);
+
+    return 0;
+}
