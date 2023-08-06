@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int ntest,c,rabbit=0,rat=0,frog=0;
+    scanf("%d",&ntest);
+    for(int i=0; i<ntest; i++){
+        int na;
+        char ch;
+        scanf("%d %c",&na,&ch);
+        if(ch=='C'){
+           rabbit=rabbit+na;
+        }
+        else if(ch=='R'){
+            rat=rat+na;
+        }
+        else if(ch=='S'){
+            frog=frog+na;
+        }
+    }
+    int total=frog+rat+rabbit;
+    printf("Total: %d cobaias\n",total);
+    printf("Total de coelhos: %d\n",rabbit);
+    printf("Total de ratos: %d\n",rat);
+    printf("Total de sapos: %d\n",frog);
+    printf("Percentual de coelhos: %.2f %%\n", (float)rabbit * 100 / total);
+    printf("Percentual de ratos: %.2f %%\n", (float)rat * 100 / total);
+    printf("Percentual de sapos: %.2f %%\n", (float)frog * 100 / total);
+
+    return 0;
+}
