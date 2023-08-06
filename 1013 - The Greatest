@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+ 
+    int a,b,c,maxab,maxf;
+    scanf("%d %d %d",&a,&b,&c);
+    
+    maxab=(a+b+abs(a-b))/2;
+    maxf=(maxab+c+abs(maxab-c))/2;
+    printf("%d eh o maior\n",maxf);
+ 
+    return 0;
+}
