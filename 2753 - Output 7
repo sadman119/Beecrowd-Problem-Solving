@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    int A=97,B=98,C=99,D=100,E=101,F=102,G=103,H=104,I=105,J=106,K=107,L=108,M=109,N=110,O=111,P=112,Q=113,R=114,S=115,T=116,U=117,V=118,W=119,X=120,Y=121,Z=122;
+    
+    printf("%d e %c\n",A,A);
+    printf("%d e %c\n",B,B);
+    printf("%d e %c\n",C,C);
+    printf("%d e %c\n",D,D);
+    printf("%d e %c\n",E,E);
+    printf("%d e %c\n",F,F);
+    printf("%d e %c\n",G,G);
+    printf("%d e %c\n",H,H);
+    printf("%d e %c\n",I,I);
+    printf("%d e %c\n",J,J);
+    printf("%d e %c\n",K,K);
+    printf("%d e %c\n",L,L);
+    printf("%d e %c\n",M,M);
+    printf("%d e %c\n",N,N);
+    printf("%d e %c\n",O,O);
+    printf("%d e %c\n",P,P);
+    printf("%d e %c\n",Q,Q);
+    printf("%d e %c\n",R,R);
+    printf("%d e %c\n",S,S);
+    printf("%d e %c\n",T,T);
+    printf("%d e %c\n",U,U);
+    printf("%d e %c\n",V,V);
+    printf("%d e %c\n",W,W);
+    printf("%d e %c\n",X,X);
+    printf("%d e %c\n",Y,Y);
+    printf("%d e %c\n",Z,Z);
+    return 0;
+}
