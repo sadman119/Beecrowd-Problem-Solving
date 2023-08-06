@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+     double A,B,weightA=3.5,weightB=7.5;
+     scanf("%lf %lf",&A,&B);
+
+double avg = (A * weightA + B * weightB) / (weightA + weightB);
+
+     printf("MEDIA = %.5lf\n",avg);
+
+    return 0;
+}
