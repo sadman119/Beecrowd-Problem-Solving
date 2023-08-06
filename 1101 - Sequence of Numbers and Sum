@@ -1,0 +1,26 @@
+// Read an undetermined number of pairs values M and N (stop when any of these values is less or equal to zero). For each pair, print the sequence from the smallest to the biggest (including both) and the sum of consecutive integers between them (including both).
+#include<stdio.h>
+int main(){
+
+    int a,b,n,sum=0,temp;
+    
+    while(1){
+    scanf("%d %d",&a,&b);
+    if(a <= 0 || b <= 0)
+    break;
+    
+    if(a>b){
+        temp=a;
+        a=b;
+        b=temp;
+    }
+    sum =0;
+    for(int i=a; i<=b; i++){
+        printf("%d ",i);
+        sum=sum+i;
+    }
+    printf("Sum=%d\n",sum);
+    
+    }
+    return 0;
+}
