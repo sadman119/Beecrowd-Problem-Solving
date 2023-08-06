@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float productcount, i, quan, code, total, totalfinal = 0.0; // Initialize totalfinal to 0.0
+    scanf("%f", &productcount);
+
+    for (i = 0; i < productcount; i++) {
+        scanf("%f %f", &code, &quan);
+        if (code == 1001)
+            total = 1.50 * quan;
+        else if (code == 1002)
+            total = 2.50 * quan;
+        else if (code == 1003)
+            total = 3.50 * quan;
+        else if (code == 1004)
+            total = 4.50 * quan;
+        else if (code == 1005)
+            total = 5.50 * quan;
+
+        totalfinal = totalfinal + total;
+    }
+    printf("%.2f\n", totalfinal);
+
+    return 0;
+}
