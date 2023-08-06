@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    
+    int xxxxx, yyy;
+    scanf("%d.%d", &xxxxx, &yyy);
+    printf("%d.%d\n", yyy, xxxxx);
+
+    return 0;
+}
