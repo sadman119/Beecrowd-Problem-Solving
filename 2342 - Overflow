@@ -1,0 +1,31 @@
+/*For example, if a computer can only represent numbers less than 1023 and we tell it to run the count 1022 + 5, it will overflow.
+Given the largest number a computer can represent and an expression for adding or multiplying two integers, determine whether an overflow will occur.
+Prohibited
+The input contains a single set of tests, which must be read from the standard input device (usually the keyboard).
+The first line of the input contains an integer N (1 ≤ N ≤ 500,000) representing the largest number the computer can represent. The second line contains an integer P (0 ≤ P ≤ 1000), followed by a blank space, followed by a C character (which can be '+' or '*', representing the addition and multiplication operators, respectively), followed by a blank, followed by another integer Q (0 ≤ Q ≤ 1000). This line represents the expression P + Q , if the C character is '+', or P × Q , if the C character for ‘*’.*/
+#include<stdio.h>
+int main(){
+    int x;
+    scanf("%d",&x);
+
+    int num1,num2,res;
+    char opera;
+    scanf("%d %c %d",&num1,&opera,&num2);
+
+    if(opera=='+'){
+        res=num1+num2;
+    }
+    else{
+        res=num1 * num2;
+    }
+
+    if(x >= res ){
+        printf("OK\n");
+    }
+    else{
+        printf("OVERFLOW\n");
+    }
+
+
+    return 0;
+}
