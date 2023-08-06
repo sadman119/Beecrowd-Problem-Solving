@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    int K;
+    int feed;
+
+    scanf("%d", &N);
+
+    for (int day = 0; day < N; day++) {
+        scanf("%d", &K);
+
+    for (int feedback = 0; feedback < K; feedback++) {
+        scanf("%d", &feed);
+
+    if (feed == 1)
+    printf("Rolien\n");
+    else if (feed == 2)
+    printf("Naej\n");
+    else if (feed == 3)
+    printf("Elehcim\n");
+    else if (feed == 4)
+    printf("Odranoel\n");
+        }
+    }
+
+    return 0;
+}
