@@ -1,0 +1,18 @@
+// Write a program that read two numbers X and Y and print the result of dividing the X by Y. If it's not possible, print the message "divisao impossivel".
+#include<stdio.h>
+int main(){
+    int N,i;
+    float x,y,result;
+    scanf("%d",&N);
+    for(i=0; i<N; i++){
+        scanf("%f %f",&x,&y);
+        if(y==0)
+        printf("divisao impossivel\n");
+        else{
+            result=x/y;
+            printf("%.1f\n",result);
+        }
+    }
+
+    return 0;
+}
