@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int x, z, c = 0;
+    scanf("%d %d", &x,&z);
+
+    while (x >= z)
+    {
+        scanf("%d", &z);
+    }
+
+    int a;
+    int sum = 0;
+    for (a = x; sum < z; a++)
+    {
+        sum += a;
+        c++;
+    }
+
+    printf("%d\n", c);
+    return 0;
+}
