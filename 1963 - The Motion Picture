@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() {
+    float a, b, x = 0;
+    scanf("%f %f", &a, &b);
+    
+    x = (100 * (b - a)) / a;
+    
+    printf("%.2f%\n", x);
+ 
+    return 0;
+}
