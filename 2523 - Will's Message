@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char str[27];
+    int cyc;
+    int inp;
+
+    while (scanf("%s", str) != EOF) {
+        scanf("%d", &cyc);
+
+
+        for (int i = 0; i < cyc; i++) {
+            scanf("%d", &inp);
+            printf("%c", str[inp - 1]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
