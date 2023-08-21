@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main(){
+	int a,n;
+
+	while(scanf("%d %d",&n,&a)!=EOF){
+	int sum=0;
+		while(a!=0){
+				sum+=a%10;
+				a/=10;
+		}
+		if(sum%3==0){
+			printf("%d sim\n",sum);
+		}else{
+			printf("%d nao\n",sum);
+		}
+	}
+
+	return 0;
+}
