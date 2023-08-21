@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c;
+    scanf("%lf %lf %lf", &a, &b, &c);
+    const double pi = 3.14159;
+
+    double tria, circ, trap, squa, reta;
+
+    tria = 0.5 * a * c;
+    circ = pi * c * c;
+    trap = 0.5 * ((a + b) * c);
+    squa = b * b;
+    reta = a * b;
+
+    printf("TRIANGULO: %.3lf\n", tria);
+    printf("CIRCULO: %.3lf\n", circ);
+    printf("TRAPEZIO: %.3lf\n", trap);
+    printf("QUADRADO: %.3lf\n", squa);
+    printf("RETANGULO: %.3lf\n", reta);
+
+    return 0;
+}
