@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+     int cyc;
+     scanf("%d",&cyc);
+     for(int i=0; i<cyc; i++){
+         int a,b;
+         scanf("%d %d",&a,&b);
+         printf("%d\n",a+b);
+     }
+     
+     
+     
+    return 0;
+}
