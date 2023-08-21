@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int days,years,months,day,temp;
+    scanf("%d",&days);
+    years=days/365;
+    temp=days%365;
+    
+    months=temp/30;
+    temp=temp%30;
+    day=temp;
+    
+    printf("%d ano(s)\n",years);
+    printf("%d mes(es)\n",months);
+    printf("%d dia(s)\n",day);
+    
+    return 0;
+}
