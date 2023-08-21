@@ -1,0 +1,10 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int tim;
+    scanf("%d",&tim);
+    printf("%d minutos\n",tim*2);
+ 
+    return 0;
+}
