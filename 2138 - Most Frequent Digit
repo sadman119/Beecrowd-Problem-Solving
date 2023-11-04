@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char number[1010];
+    
+    while (scanf("%s", number) != EOF) {
+        int dcount[10] = {0};
+        int mcount = 0;
+        int mostfrequent;
+
+        for (int i = 0; i < strlen(number); i++) {
+            int digit = number[i] - '0';
+            dcount[digit]++;
+            if (dcount[digit] > mcount || (dcount[digit] == mcount && digit > mostfrequent)) {
+                mcount = dcount[digit];
+                mostfrequent = digit;
+            }
+        }
+
+        printf("%d\n", mostfrequent);
+    }
+
+    return 0;
+}
