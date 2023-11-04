@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char ch[16];
+    long long len, res;
+
+    while (1) {
+        scanf("%s", ch);
+        if (strcmp(ch, "0") == 0)
+            break;
+        len = strlen(ch);
+        res = 1;
+
+        for (int i = 1; i <= len; i++) {
+            res *= i;
+        }
+        printf("%lld\n", res);
+    }
+
+    return 0;
+}
