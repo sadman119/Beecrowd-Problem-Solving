@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+
+	double min, bra, ger;
+
+	while (1)
+	{
+
+		scanf("%lf", &min);
+
+		if (min == 0)
+			break;
+
+		bra = floor(min / 90);
+		ger = ceil(7 * min / 90);
+
+		printf("Brasil %.lf x Alemanha %.lf\n", bra, ger);
+
+	}
+	return 0;
+}
