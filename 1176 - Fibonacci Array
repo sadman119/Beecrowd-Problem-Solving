@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int cyc, N;
+    scanf("%d", &cyc);
+
+    while(cyc--){
+        scanf("%d", &N);
+
+        long long a = 0, b = 1, fib = N;
+        if (N == 0) {
+            fib = 0;
+        } else if (N == 1) {
+            fib = 1;
+        } else {
+            for (int i = 2; i <= N; i++) {
+                fib = a + b;
+                a = b;
+                b = fib;
+            }
+        }
+        
+        printf("Fib(%d) = %lld\n", N, fib);
+    }
+
+    return 0;
+}
